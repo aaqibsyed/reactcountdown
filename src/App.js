@@ -59,6 +59,7 @@ function App() {
   };
 
   const handleStart = () => {
+    setPause(false) // to account for any clicks on pause button before starting
     for (let i = 1; i < interval_id; i++) {
       window.clearInterval(i);
     }
